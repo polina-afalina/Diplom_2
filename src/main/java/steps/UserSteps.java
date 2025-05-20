@@ -15,13 +15,11 @@ public class UserSteps {
     @Step("Создание пользователя: {user}")
     public static Response createUser(UserModel user) {
         return given()
-                .log().all()
                 .contentType(ContentType.JSON)
                 .body(user)
                 .when()
                 .post(USER_REGISTER_ENDPOINT)
                 .then()
-                .log().all()
                 .extract()
                 .response();
     }
@@ -29,13 +27,11 @@ public class UserSteps {
     @Step("Логин пользователя: {user}")
     public static Response loginUser(UserModel user) {
         return given()
-                .log().all()
                 .contentType(ContentType.JSON)
                 .body(user)
                 .when()
                 .post(USER_LOGIN_ENDPOINT)
                 .then()
-                .log().all()
                 .extract()
                 .response();
     }
@@ -43,12 +39,10 @@ public class UserSteps {
     @Step("Удаление пользователя с токеном: {token}")
     public static Response deleteUser(String token) {
         return given()
-                .log().all()
                 .header("Authorization", token)
                 .when()
                 .delete(USER_INFO_ENDPOINT)
                 .then()
-                .log().all()
                 .extract()
                 .response();
     }
@@ -56,14 +50,12 @@ public class UserSteps {
     @Step("Обновление данных пользователя с токеном: {token}")
     public static Response updateUser(UserModel user, String token) {
         return given()
-                .log().all()
                 .contentType(ContentType.JSON)
                 .header("Authorization", token)
                 .body(user)
                 .when()
                 .patch(USER_INFO_ENDPOINT)
                 .then()
-                .log().all()
                 .extract()
                 .response();
     }

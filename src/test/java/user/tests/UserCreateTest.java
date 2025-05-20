@@ -1,4 +1,4 @@
-package UserTests;
+package user.tests;
 
 import io.qameta.allure.Description;
 import io.qameta.allure.junit4.DisplayName;
@@ -9,7 +9,7 @@ import steps.UserSteps;
 
 import static java.net.HttpURLConnection.*;
 import static org.hamcrest.Matchers.equalTo;
-import static testData.TestValues.*;
+import static test.data.TestValues.*;
 
 public class UserCreateTest extends UserBaseTest {
 

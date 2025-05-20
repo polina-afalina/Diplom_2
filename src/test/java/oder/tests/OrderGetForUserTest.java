@@ -1,4 +1,4 @@
-package OrderTests;
+package oder.tests;
 
 import io.qameta.allure.Description;
 import io.qameta.allure.junit4.DisplayName;
@@ -13,7 +13,7 @@ import java.util.List;
 
 import static java.net.HttpURLConnection.*;
 import static org.hamcrest.Matchers.*;
-import static testData.TestValues.*;
+import static test.data.TestValues.*;
 
 public class OrderGetForUserTest extends OrderBaseTest {
 
@@ -21,7 +21,7 @@ public class OrderGetForUserTest extends OrderBaseTest {
     public void setUpOrder() {
         super.setUpBase();
 
-        // Создаём 1 заказ, чтобы он появился в истории
+        // Создаем 1 заказ, чтобы он появился в истории
         OrderModel order = new OrderModel(List.of(CRATER_BUN, IMMORTAL_MOLLUSK_MEAT));
         OrderSteps.createOrderWithAuth(order, accessToken)
                 .then()

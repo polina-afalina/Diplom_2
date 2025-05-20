@@ -1,4 +1,4 @@
-package testData;
+package test.data;
 
 public class TestValues {
     public static final String BASE_URL = "https://stellarburgers.nomoreparties.site";
@@ -16,6 +16,7 @@ public class TestValues {
     public static final String MESSAGE_UNAUTHORIZED = "You should be authorised";
     public static final String MESSAGE_EMAIL_EXISTS = "User with such email already exists";
     public static final String MESSAGE_INGREDIENT_IDS = "Ingredient ids must be provided";
+
     // Ингридиенты
     public static final String FLUORESCENT_BUN = "61c0c5a71d1f82001bdaaa6d";
     public static final String IMMORTAL_MOLLUSK_MEAT = "61c0c5a71d1f82001bdaaa6f";

@@ -1,4 +1,4 @@
-package OrderTests;
+package oder.tests;
 
 import com.github.javafaker.Faker;
 import io.restassured.RestAssured;
@@ -8,7 +8,7 @@ import org.junit.BeforeClass;
 import steps.UserSteps;
 
 import static java.net.HttpURLConnection.HTTP_OK;
-import static testData.TestValues.BASE_URL;
+import static test.data.TestValues.BASE_URL;
 
 public class OrderBaseTest {
 

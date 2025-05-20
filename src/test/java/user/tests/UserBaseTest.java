@@ -1,11 +1,11 @@
-package UserTests;
+package user.tests;
 
 import com.github.javafaker.Faker;
 import io.restassured.RestAssured;
 import model.UserModel;
 import org.junit.After;
 import org.junit.BeforeClass;
-import testData.TestValues;
+import test.data.TestValues;
 import steps.UserSteps;
 
 import static java.net.HttpURLConnection.HTTP_ACCEPTED;

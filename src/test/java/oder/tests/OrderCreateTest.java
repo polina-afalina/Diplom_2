@@ -1,4 +1,4 @@
-package OrderTests;
+package oder.tests;
 
 import io.qameta.allure.Description;
 import io.qameta.allure.junit4.DisplayName;
@@ -10,7 +10,7 @@ import java.util.List;
 
 import static java.net.HttpURLConnection.*;
 import static org.hamcrest.Matchers.*;
-import static testData.TestValues.*;
+import static test.data.TestValues.*;
 
 public class OrderCreateTest extends OrderBaseTest {
 
