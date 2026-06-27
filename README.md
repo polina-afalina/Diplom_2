@@ -4,7 +4,7 @@ This project was developed as part of the Yandex Practicum Full-Stack QA course 
 
 The framework validates key REST API endpoints related to user management and order lifecycle scenarios, using **Rest Assured** for HTTP interactions and **Allure Reports** for structured test reporting and analysis.
 
-## Project Overview
+## Overview
 
 This test suite validates key backend functionality of the application, including:
 
@@ -17,6 +17,30 @@ All tests are executed against a live REST API environment.
 
 Reference API documentation:  
 https://code.s3.yandex.net/qa-automation-engineer/java/cheatsheets/paid-track/diplom/api-documentation.pdf
+
+## Tested Components
+
+The test suite covers core REST API functionality of the Stellar Burgers web application, ensuring correct behavior of backend services and endpoint interactions.
+
+Key areas include:
+
+- User management flows (registration, login, and authentication handling)
+- Order lifecycle (creation, retrieval, and validation of orders)
+- Ingredient data retrieval and integrity via API responses
+- Authorization and access control for protected endpoints
+- Edge cases such as invalid payloads, missing fields, and expired/invalid tokens
+
+
+## Testing Approach
+
+The test suite is built around API-level validation and includes:
+
+- REST Assured-based integration tests for HTTP endpoints
+- Positive and negative test scenarios for each feature area
+- Request/response validation using structured assertions
+- Data-driven testing for multiple input variations
+- Automated reporting via Allure Reports
+- Token handling and authentication setup for secured endpoints
 
 ## Tech Stack
 
