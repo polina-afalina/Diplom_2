@@ -1,31 +1,73 @@
-# Diplom_2 проект: API тестирование
+# Diplom_2 — REST API Test Automation for Stellar Burgers
 
-Проект предназначен для автоматизированного тестирования сценариев взаимодействия с REST API ручками веб-приложения [Stellar Burgers](https://stellarburgers.nomoreparties.site/).
+This project was developed as part of the Yandex Practicum Full-Stack QA course and focuses on automated API testing of the *Stellar Burgers* web application.
 
-Тестируемые ручки описаны в [API документации](https://code.s3.yandex.net/qa-automation-engineer/java/cheatsheets/paid-track/diplom/api-documentation.pdf).
+The framework validates key REST API endpoints related to user management and order lifecycle scenarios, using **Rest Assured** for HTTP interactions and **Allure Reports** for structured test reporting and analysis.
 
-## Технологии
+## Project Overview
 
-| Технология            | Версия       | Назначение                                                                |
-|-----------------------|--------------|---------------------------------------------------------------------------|
-| Java                  | 11           | Язык программирования, используемый для написания тестов                  |
-| Maven                 | 3.9.0        | Система управления зависимостями и сборкой проекта                        |
-| JUnit                 | 4.12         | Фреймворк для написания и выполнения модульных тестов                     |
-| Rest Assured          | 4.4.0        | Библиотека для тестирования REST API                                      |
-| Allure                | 2.15.0       | Фреймворк для генерации наглядных отчетов по результатам тестов           |
-| Allure Maven Plugin   | 2.10.0       | Плагин для генерации отчетов Allure через Maven                           |
-| AspectJ Weaver        | 1.9.7        | Инструмент для подключения аспектов (необходим для Allure отчетов)        |
-| Gson                  | 2.12.1       | Библиотека для сериализации и десериализации JSON                         |
-| Lombok                | 1.18.38      | Библиотека для генерации шаблонного кода (геттеры, сеттеры, конструкторы) |
-| JavaFaker             | 1.0.2        | Библиотека для генерации фейковых данных (имена, email и т.п.)            |
+This test suite validates key backend functionality of the application, including:
 
+- User registration, authentication, and updates  
+- Order creation and retrieval  
+- Negative and edge-case API validation  
+- Authorization and validation rules  
 
-## Запуск тестов
+All tests are executed against a live REST API environment.
+
+Reference API documentation:  
+https://code.s3.yandex.net/qa-automation-engineer/java/cheatsheets/paid-track/diplom/api-documentation.pdf
+
+## Tech Stack
+
+- **Java 11** — test implementation language  
+- **Maven** — build and dependency management  
+- **JUnit 4** — test framework  
+- **REST Assured** — API testing library  
+- **Allure Reports** — test reporting
+- **AspectJ** — Allure integration support   
+- **Gson** — JSON serialization  
+- **Lombok** — boilerplate reduction  
+- **JavaFaker** — test data generation  
+
+## Requirements
+
+Before running the project, make sure you have installed:
+
+- Java JDK 11 or higher
+- Apache Maven
+
+Check installation:
 
 ```bash
-# Запуск тестов
-mvn clean test
+java -version
+mvn -version
+```
 
-# Генерация отчета Allure
+## How to Run Tests
+
+Clone the repository:
+
+```bash
+git clone <repository-url>
+```
+
+Navigate to the project folder:
+
+```bash
+cd <project-folder>
+```
+
+Run tests:
+
+```bash
+mvn clean test
+```
+
+## How to Generate Allure Report
+
+Run:
+
+```bash
 mvn allure:serve
 ```
