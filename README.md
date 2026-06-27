@@ -1,26 +1,17 @@
 # Diplom_2 — REST API Test Automation for Stellar Burgers
 
-This project was developed as part of the Yandex Practicum Full-Stack QA course and focuses on automated API testing of the *Stellar Burgers* web application.
-
-The framework validates key REST API endpoints related to user management and order lifecycle scenarios, using **Rest Assured** for HTTP interactions and **Allure Reports** for structured test reporting and analysis.
-
 ## Overview
 
-This test suite validates key backend functionality of the application, including:
+This project contains automated REST API tests for the *Stellar Burgers* application. It focuses on verifying core backend functionality through HTTP endpoints, ensuring that user and order operations behave correctly under different scenarios.
 
-- User registration, authentication, and updates  
-- Order creation and retrieval  
-- Negative and edge-case API validation  
-- Authorization and validation rules  
-
-All tests are executed against a live REST API environment.
+The test suite validates both functional and negative cases, including authentication flows, order handling, and API validation rules, executed against a live REST API environment.
 
 Reference API documentation:  
 https://code.s3.yandex.net/qa-automation-engineer/java/cheatsheets/paid-track/diplom/api-documentation.pdf
 
 ## Tested Components
 
-The test suite covers core REST API functionality of the Stellar Burgers web application, ensuring correct behavior of backend services and endpoint interactions.
+The test suite covers core REST API functionality of the *Stellar Burgers* web application, ensuring correct behavior of backend services and endpoint interactions.
 
 Key areas include:
 
@@ -68,7 +59,7 @@ java -version
 mvn -version
 ```
 
-## How to Run Tests
+## Running Tests
 
 Clone the repository:
 
@@ -88,9 +79,7 @@ Run tests:
 mvn clean test
 ```
 
-## How to Generate Allure Report
-
-Run:
+Generate Allure report:
 
 ```bash
 mvn allure:serve
